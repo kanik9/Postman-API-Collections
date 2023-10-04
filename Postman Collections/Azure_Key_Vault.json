@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "55357ec4-b0cd-4ebb-8a33-8a6a7b1002c8",
+		"name": "Azure Key Vault",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "61fc9f44-a6f0-41cf-ba1b-2e0f52cbae8c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://poc-openai-kv-eastus.vault.azure.net/secrets/OPENAI-API-KEY?api-version=7.4",
+					"protocol": "https",
+					"host": [
+						"poc-openai-kv-eastus",
+						"vault",
+						"azure",
+						"net"
+					],
+					"path": [
+						"secrets",
+						"OPENAI-API-KEY"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "7.4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
